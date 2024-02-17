@@ -1,2 +1,3 @@
-# CV
-Hi, this is Jerry Chen's CV 2024 version
+Hi, this is Jerry Chen's CV.
+
+Feel free to contact me through mynameisjerry870203@gmail.com
