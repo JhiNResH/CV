@@ -3,6 +3,9 @@ name: Build LaTeX CV
 on:
   push:
     branches: [main]
+    paths:
+      - "LateX/**"
+      - ".github/workflows/build_latex.yml"
   workflow_dispatch:
 
 jobs:
