@@ -8,6 +8,9 @@ on:
       - ".github/workflows/build_latex.yml"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -15,13 +18,15 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Install TeXLive
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+
       - name: Compile LaTeX Document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: main.tex
-          working_directory: LateX
-          compiler: xelatex
-          args: "-pdf -file-line-error -interaction=nonstopmode"
+        run: |
+          cd LateX
+          latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
 
       - name: Rename PDF
         run: mv LateX/main.pdf LateX/Jerry_Chen_CV.pdf
