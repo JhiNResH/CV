@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.4in,right=0.4in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, noitemsep, before=\small}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontspec}
+% Remove page numbers
+\pagestyle{empty}
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{2pt}
+% Custom commands
+\newcommand{\entry}[4]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+\begin{document}
+% Header
+\begin{center}
+    {\Huge \textbf{JERRY (CHIEN-JUI) CHEN}} \\
+    Irvine, CA | +1 682 390 9456 | \href{mailto:jhinresh@gmail.com}{jhinresh@gmail.com} | \href{https://github.com/JhiNResH}{GitHub} | \href{https://www.linkedin.com/in/chien-jui-jerry-chen-21a11720a/}{LinkedIn}
+\end{center}
+% Education
+\section{Education}
+\noindent \textbf{Westcliff University} -- MS in Computer Science \hfill Exp. 2026 \\
+\noindent \textbf{University of Texas at Arlington} -- MS in Information Systems \hfill 2024 \\
+\noindent \textbf{University of Texas at Arlington} -- MS in Mechanical Engineering \hfill 2023 \\
+\noindent \textbf{Yuan Ze University} -- BS in Mechanical Engineering \hfill 2021
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Languages/Frameworks}: TypeScript, Rust, Solidity, Python, React.js, Next.js, Node.js, Anchor
+    \item \textbf{Tools/Web3}: Hardhat, Foundry, ZK Circuit, Noir, SQL, TailwindCSS, JQuery, MongoDB, Git,
+\end{itemize}
+% Experience
+\section{Experience}
+\entry{Investment Analyst Intern}{Dev 2025 -- Present}{True Phil Venture Capital}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Conduct market research and thematic analysis across Web3 emerging frontier tech sectors.
+    \item Source high-potential early-stage founders, communities, events, and product-facing analysis.
+    \item Draft investment memos, competitive landscape maps, and founder outreach briefs.
+    \item Support due diligence by evaluating product traction, token models, business models, and market size.
+    \item Assist with portfolio monitoring and follow-up communication with founders.
+\end{itemize}
+
+\entry{Founder / CEO}{Aug 2024 -- June 2025}{Sponge (DeFi Startup)}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Founded a DeFi startup focused on stablecoin yield optimization; lead a team of 4 engineers.
+    \item Architected the full-stack application using Rust (backend) and React/Next.js (frontend).
+    \item Designed and deployed smart contracts on Solana.
+\end{itemize}
+\vspace{1pt}
+
+\entry{Growth Developer Intern}{July 2024 -- Oct 2024}{Perena}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Developed responsive frontend interfaces for a stablecoin platform using React and TailwindCSS.
+    \item Integrated RESTful APIs to display real-time market data, reducing page load time by 20\%.
+\end{itemize}
+
+\entry{Fellowship}{March 2024 -- Nov 2024}{Wormhole}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Authored technical research papers on Cross-Chain Interoperability Protocol (CCIP).
+    \item Moderated community channels and guide users using cross-chain protocol with Wormhole between Solana and other chains.
+\end{itemize}
+
+\entry{Frontend Engineer}{Dec 2023 -- Feb 2024}{Dissect (NFTFI)}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Built application webpages using React.js and TailwindCSS.
+    \item Collaborated on frontend architecture and component design.
+\end{itemize}
+
+\entry{R\&D Intern}{Feb 2020 -- June 2020}{Fortune Electric Co., Ltd.}{Taiwan}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Designed power plant components using AutoCAD and SolidWorks.
+    \item Organized and processed customer data into the cloud using Python and Excel.
+\end{itemize}
+
+\section{Leadership \& Volunteering}
+\entry{Ambassador}{March 2024 -- July 2024}{Accumulated Finance}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Authored technical papers on omnichain liquid staking protocols integrated with Curve Finance.
+    \item Moderated community channels and guided users on liquid staking strategies.
+\end{itemize}
+\vspace{2pt}
+\entry{Ambassador}{Sep 2024 -- Nov 2024}{Zeus Network}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Research and proposed for Defi campaign on Zeus Network.
+    \item Moderated community channels and guided users on zBTC and the ecosystem of Zeus Network.
+\end{itemize}
+
+\entry{Prepared Angel (Volunteer)}{Oct 2022 -- Nov 2023}{Binance}{Remote}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Maintained Discord community and organized regular events.
+    \item Developed Discord bots to automate information retrieval and improve community efficiency.
+\end{itemize}
+% Projects & Awards
+\section{Projects \& Awards}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Uniswap Hook Incubator} (2026): Cohort 8 - Kindred (Uniswap V4/Foundry)
+    \item \textbf{Solana Solaris Accelerator} (2025): Cohort 1 - Sponge (Anchor/Rust)
+    \item \textbf{Solana Foundation Grants} (2025): USA Grants - Sponge (Anchor/Rust)
+    \item \textbf{Jito Grid Hackathon} (2025): 1st Place - Sponge (Anchor/Rust)
+    \item \textbf{SOON Genesis Hackathon} (2024): 5th Place - Sponge (Anchor/Rust)
+    \item \textbf{Taipei Blockchain Week Hackathon} (2024): 2nd Place (Raydium Defi) - Sponge (Anchor/Rust)
+    \item \textbf{Solana Colosseum Breakout Hackathon} (2024): 1st Place (Taiwan), 3rd Place (Chinese \& Solayer AVS) - Sponge
+    \item \textbf{XueDao Connect Hackathon} (2024): 3rd Place (Cathay Financial) - Trucritic (Anchor/Rust)
+    \item \textbf{EasyA Consensus Hackathon} (2024): Honorable Mention - Stackey (Clarity)
+\end{itemize}
+\end{document}
